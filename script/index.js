@@ -3,7 +3,7 @@ $(document).ready(()=>{
 
     console.log(user);
 
-    $('.username').html(user);
+    $('.username').html('<i class="fas fa-user-circle fa-fw"></i> ' + user);
 });
 
 $('#logoutAction').click(()=>{

@@ -740,7 +740,7 @@ pre code {
 .order-1 {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
-  order: 1;
+  order: 0;
 }
 
 .order-2 {
@@ -10776,10 +10776,31 @@ body{
   z-index: 1000;
 }
 
+.sticky-footer{
+  background-color: rgba(100,100,100,0.3) !important;
+  color: white;
+  height: 28px !important;
 
+}
 
+#main-container{
+  -webkit-border-radius: 5px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius: 5px;
+  -moz-border-radius-bottomright: 10px;
+  border-radius: 5px;
+  border-bottom-right-radius: 10px;
+  width: 97%;
+  height: 104%;
+  background-color: rgba(200, 200, 200, 0.95);
+  box-shadow: 1px 1px 30px 5px black;
+}
 
-
+@media (min-width:768px){
+  #sidebarToggle{
+    display: none !important;
+  }
+}
 
 
 

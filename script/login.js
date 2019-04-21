@@ -23,6 +23,8 @@ $('#submit').click(()=>{
                 data.forEach(element => {
                     if(user == element.dsUser && hashPass == element.dsPass){
                         window.sessionStorage.setItem('user',user);
+                        window.sessionStorage.setItem('nome',element.nmUser);
+                        window.sessionStorage.setItem('cdUser',element.cdUser);
                         window.sessionStorage.setItem('isLogado',true);
                         window.location.href = "index.php";
                     }

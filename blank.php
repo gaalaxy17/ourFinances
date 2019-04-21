@@ -5,11 +5,13 @@
 
   <script type="text/javascript">
     if(!window.sessionStorage.getItem('isLogado')){
-      alert("Efetue o login primeiro!");
       window.location.href="login.php";
     }
   </script>
 
+  <meta name="theme-color" content="#353a40">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#353a40">
+  <meta name="msapplication-navbutton-color" content="#353a40">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,7 +32,8 @@
 </head>
 
 <body id="page-top">
-
+  <div class="darken-bkg">
+  </div>
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
     <a class="navbar-brand mr-1" href="index.html">Start Bootstrap</a>
