@@ -26,7 +26,7 @@ $('#submit').click(()=>{
                         window.sessionStorage.setItem('nome',element.nmUser);
                         window.sessionStorage.setItem('cdUser',element.cdUser);
                         window.sessionStorage.setItem('isLogado',true);
-                        window.location.href = "index.php";
+                        window.location.href = "index.html";
                     }
                     else{
                         error = "Login ou Senha invalida!";

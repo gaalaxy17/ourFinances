@@ -5,7 +5,7 @@
  */
 
 /*!
- * Bootstrap v4.2.1 (https://getbootstrap.com/)
+ * Bootstrap  v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -10730,6 +10730,10 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
+#main-card{
+  width: 320px !important;
+}
+
 .card-login{
   background-color: rgba(222,222,222,0.70);
 }
@@ -10790,16 +10794,58 @@ body{
   -moz-border-radius-bottomright: 10px;
   border-radius: 5px;
   border-bottom-right-radius: 10px;
-  width: 97%;
-  height: 104%;
+  float: left;
+  margin-left: 15px;
+  width: 350px;
+  height: 385px;
   background-color: rgba(200, 200, 200, 0.95);
-  box-shadow: 1px 1px 30px 5px black;
+  box-shadow: 1px 5px 20px 3px black;
+}
+
+#main-login{
+  -webkit-border-radius: 5px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius: 5px;
+  -moz-border-radius-bottomright: 10px;
+  border-radius: 5px;
+  border-bottom-right-radius: 10px;
+  float: left;
+  margin-left: 15px;
+  width: 350px;
+  height: 385px;
+  background-color: rgba(200, 200, 200, 0.95);
+  box-shadow: 1px 5px 20px 3px black;
+}
+
+#main-canvas{
+  padding-top: auto;
+  padding-bottom: auto;
+  -webkit-border-radius: 5px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius: 5px;
+  -moz-border-radius-bottomright: 10px;
+  border-radius: 5px;
+  border-bottom-right-radius: 10px;
+  float: right;
+  margin-right: 15px;
+  width: 400px;
+  height: 385px;
+  background-color: rgba(200, 200, 200, 0.95);
+  box-shadow: 1px 5px 20px 3px black;
 }
 
 @media (min-width:768px){
   #sidebarToggle{
     display: none !important;
   }
+}
+
+#myChart{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 

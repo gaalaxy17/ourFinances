@@ -5,7 +5,7 @@
 
   <script type="text/javascript">
     if(!window.sessionStorage.getItem('isLogado')){
-      window.location.href="login.php";
+      window.location.href="login.html";
     }
   </script>
 
@@ -32,19 +32,17 @@
 </head>
 
 <body id="page-top" class="sidebar-toggled">
-  <div class="darken-bkg"></div>
-  <div class="spinner-border text-light" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
+    
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
       <i class="fas fa-bars"></i>
     </button>
-    <a class="navbar-brand mr-1" href="index.php">ourFinances</a>
-    <!-- SPACE -->
+    <a class="navbar-brand mr-1" href="index.html">ourFinances</a>
+    
     <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
      
     </form>
+    
 
     <!-- Navbar -->
     <ul class="navbar-nav ml-auto ml-md-0">
@@ -62,7 +60,6 @@
       </li>
       <li class="nav-item dropdown no-arrow">
         <a class="nav-link dropdown-toggle username" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
           <a class="dropdown-item" href="#">Settings</a>
@@ -79,40 +76,62 @@
 
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav toggled">
-      <li class="nav-item">
-        <a class="nav-link" href="index.php">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="account.php">
+      <li class="nav-item">
+        <a class="nav-link" href="account.html">
           <i class="fas fa-fw fa-money-check"></i>
           <span>Nossa Conta</span></a>
       </li>
     </ul>
 
     <div id="content-wrapper">
-      
-        <div class="container-fluid" id="main-container">
-          <br>
-          <div class="card text-white bg-dark" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Informações da conta:</h5>
-              <h6 class="card-subtitle mb-2 text-muted" id="contaTipo"></h6>
-              <p class="card-text" id="contaDono"></p>
+
+      <div class="container-fluid">
+
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Dashboard</a>
+          </li>
+          <li class="breadcrumb-item active">Overview</li>
+        </ol>
+
+        <!-- Icon Cards-->
+        <div class="row">
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-primary o-hidden h-100">
+              <div class="card-body">
+                <div class="card-body-icon">
+                  <i class="fas fa-fw fa-comments"></i>
+                </div>
+                <div class="mr-5">26 New Messages!</div>
+              </div>
+              <a class="card-footer text-white clearfix small z-1" href="#">
+                <span class="float-left">View Details</span>
+                <span class="float-right">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
             </div>
           </div>
-          <br>
-          <div class="card text-white bg-dark" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Saldo Total:</h5>
-              <p class="card-text" id="saldoTotal"></p>
-            </div>
-          </div>
+
         </div>
 
-
+        <!-- Area Chart Example-->
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-chart-area"></i>
+            Area Chart Example</div>
+          <div class="card-body">
+            <canvas id="myAreaChart" width="100%" height="30"></canvas>
+          </div>
+          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        </div>
       <!-- Sticky Footer -->
       <footer class="sticky-footer">
         <div class="container my-auto">
@@ -146,7 +165,7 @@
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.php" id="logoutAction">Logout</a>
+          <a class="btn btn-primary" href="login.html" id="logoutAction">Logout</a>
         </div>
       </div>
     </div>
@@ -171,7 +190,7 @@
   <script src="js/demo/datatables-demo.js"></script>
   <script src="js/demo/chart-area-demo.js"></script>
 
-  <script src="script/account.js"></script>
+  <script src="script/index.js"></script>
 
 </body>
 
