@@ -10725,7 +10725,7 @@ body.sidebar-toggled footer.sticky-footer {
 
 body{
   background-image: url(../img/bkg.jpg);
-  background-position: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Montserrat', sans-serif;
 }
