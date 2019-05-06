@@ -17,7 +17,7 @@ $('#submit').click(()=>{
         var pass = $('#inputPassword').val();
     
 
-        $.get("http://gaalaxyapijs.herokuapp.com/users",(data)=>{
+        $.get("https://gaalaxyapijs.herokuapp.com/users",(data)=>{
             $.get('https://api.hashify.net/hash/md4/hex?value=' + pass,(hash)=>{
                 var hashPass = hash.Digest;
                 data.forEach(element => {
