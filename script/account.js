@@ -47,7 +47,7 @@ $(document).ready(()=>{
     $('.darken-bkg').css("display","block");
     $('.spinner-border').show();
 
-    $.get('https://gaalaxyapijs.herokuapp.com/account',(data)=>{
+    $.get('https://gaalaxyapijs.herokuapp.com/accounts',(data)=>{
         data.forEach(element => {
             if(element.fkDonoConta == window.sessionStorage.getItem('cdUser') || element.fkParConta == window.sessionStorage.getItem('cdUser')){
                 $.get('http://gaalaxyapijs.herokuapp.com/users', (user)=>{
