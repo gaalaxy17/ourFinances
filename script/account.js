@@ -50,7 +50,7 @@ $(document).ready(()=>{
     $.get('https://gaalaxyapijs.herokuapp.com/accounts',(data)=>{
         data.forEach(element => {
             if(element.fkDonoConta == window.sessionStorage.getItem('cdUser') || element.fkParConta == window.sessionStorage.getItem('cdUser')){
-                $.get('http://gaalaxyapijs.herokuapp.com/users', (user)=>{
+                $.get('https://gaalaxyapijs.herokuapp.com/users', (user)=>{
                     $('#saldoTotal').html('R$ ' + element.vlTotalConta);
                     $('#contaTipo').html('Conta: ' + element.tpConta);
                     user.forEach(users => {
