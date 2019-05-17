@@ -1,4 +1,4 @@
-const API_ENDPOINT = "http://gaalaxyapijs.herokuapp.com";
+const API_ENDPOINT = "https://gaalaxyapijs.herokuapp.com";
 
 $('#submit').click(()=>{
 
